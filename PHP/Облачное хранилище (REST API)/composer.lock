@@ -1,0 +1,70 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "35b89ad0c6e51b45b76d57e051c604c9",
+    "packages": [
+        {
+            "name": "rainner/restful-php",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rainner/restful-php.git",
+                "reference": "f23093b78803ff8e1ea792ab3b96772c968e5bbc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rainner/restful-php/zipball/f23093b78803ff8e1ea792ab3b96772c968e5bbc",
+                "reference": "f23093b78803ff8e1ea792ab3b96772c968e5bbc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Restful\\": "src/Restful"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rainner Lins",
+                    "email": "rainnerlins@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Parses the raw input body for all RESTful verbs (POST, PUT, DELETE, PATCH, etc.) and provides a better way for working with uploaded files.",
+            "keywords": [
+                "data",
+                "files",
+                "http",
+                "input",
+                "php",
+                "restful",
+                "stream",
+                "upload"
+            ],
+            "support": {
+                "issues": "https://github.com/rainner/restful-php/issues",
+                "source": "https://github.com/rainner/restful-php/tree/1.0.0"
+            },
+            "time": "2016-01-06T02:16:32+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
+}

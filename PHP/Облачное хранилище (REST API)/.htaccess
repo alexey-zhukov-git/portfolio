@@ -1,0 +1,19 @@
+<VirtualHost *:80>
+DocumentRoot /var/www/html
+ServerName cloud-storage.local
+ServerAlias www.cloud-storage.local
+ErrorLog "/var/log/apache2/cloud-storage.local-error.log"
+CustomLog "/var/log/apache2/cloud-storage.local-access.log"
+common
+<Directory /var/www/html/>
+Options +Indexes +Includes +FollowSymLinks +MultiViews
+AllowOverride All
+Require all granted
+<IfModule mod_rewrite.c>
+Options -MultiViews
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ /index.php [QSA,L]
+</IfModule>
+</Directory>
+</VirtualHost>
