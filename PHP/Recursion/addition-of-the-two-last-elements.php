@@ -8,12 +8,13 @@
 */
 
 $initialList = [3, 7];
+define("NUMBER_OF_ELEMENTS", 5);
 
 /*
 
 Итеративный вариант:
 
-for($i = 2; $i < 5; $i++) {
+for($i = 2; $i < NUMBER_OF_ELEMENTS; $i++) {
     $sum = $initialList[$i - 1] + $initialList[$i - 2];
     $initialList[] = $sum;
 }
@@ -29,7 +30,7 @@ function add(array $initialList, int $i): void
     $sum = $initialList[$i - 1] + $initialList[$i - 2];
     $initialList[] = $sum;
     $i++;
-    if(count($initialList) == 5) {
+    if(count($initialList) == NUMBER_OF_ELEMENTS) {
         var_dump($initialList);
     } else {
         add($initialList, $i);
